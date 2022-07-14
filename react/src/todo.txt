@@ -1,0 +1,51 @@
+[x] Wallet Connect should update menu (subscribe to event);
+[x] Meta Mask thinks it is connected it is just pending...
+[x] Need to handle MetaMask permissions pending error.
+[x] Connecting to Wallet Connect and refreshing causes an error
+[x] Universal subscription service, create returns ID used by system, add subscribers returns ID trying to reconnect.
+[x] Context needs to handle all subscriptions.
+[x] Disconnect menu item needs to be fixed
+[x] Wallet Address on accounts dialog needs to be condensed.
+[x] Saving session in browser needs to be implemented.
+[x] Fix chainId on Wallet Connect.
+[x] add Support for Meta Mask auto connect, make invisible on mobile browser and visible on MMbrowse
+[x] old version of canvas required for this to work. 2.6.1 without ^
+[ ] Need to implement Website name and logo.
+[ ] Need to fix card and gif directories.
+[x] Need to fix .htaccess
+[ ] Need to fix card/gif preview section, major issue!.
+[ ] need to fix main.html issue.
+[x] Issue with canvas version causes system to crash.
+[ ] redirection is a little faulty, express uses main.html instead of index.html.
+[ ] Need to get production server config placed in folder and prepped.
+[x] Wallet Connect Requires old version of React
+[x] Need to fix Wallet Connects isConnected, Shows always connected on mobile.
+[ ] Get defcon working.
+[ ] Remove routes.
+[ ] Fix search to allow random IPC, both button and hitting enter.
+[ ] Need to figure omething out for all the window.location.href's scattered about.
+[ ] Wallet view needs additional error checking, fails in offline mode.
+[ ] offline mode needs to be fixed.
+[ ] Fix send request error in mobile with Wallet Connect.
+[ ] Sharing Subscriptions does not work and leads to major bugs! Separate!
+[ ] Wallet view doesn't always list all newly minted IPCs unless they've been viewed....Need to make a generic template for them.
+[ ] 3156's allet shows no IPCs.
+[ ] Searching wallet doesn't immediatly pull up the wallet. when already viewing a wallet.
+[ ] View on etherscan.
+[ ] Historic Collection.
+[ ] Fix card updater.
+
+Test
+[ ] Wallet Connects auto connect feature.
+
+Wallet Connect
+"react": "^17.0.2"
+"react-scripts": "^4.0.3"
+
+Canvas
+"canvas": "^2.9.1"
+
+* WalletConnect subscribes to MultiWallet events by passing a function with what is needed to update the menu.
+* subscribing means using a factory to create a function fit for sending to the subscribing component.
+* an event is created in context, component subscribes to event, other components subscribe their functions.
+* login button gnerates openlogindialog event, logindialogresponds.

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.59b33ac2.css",
+    "main.js": "/static/js/main.e2524ee8.js",
+    "static/js/684.0bab5c8f.chunk.js": "/static/js/684.0bab5c8f.chunk.js",
+    "static/media/Poppins-Italic.ttf": "/static/media/Poppins-Italic.e373f6163127e2d469af.ttf",
+    "static/media/Poppins-SemiBoldItalic.ttf": "/static/media/Poppins-SemiBoldItalic.3524ffc3226f4578e5c5.ttf",
+    "static/media/Poppins-BoldItalic.ttf": "/static/media/Poppins-BoldItalic.cfb635a5111b545f5598.ttf",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/Poppins-Bold.ttf": "/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/OldSansBlack.ttf": "/static/media/OldSansBlack.33216c24cb5c713439e1.ttf",
+    "static/media/alagard.ttf": "/static/media/alagard.685ec71b2fb55a5702b0.ttf",
+    "index.html": "/index.html",
+    "main.59b33ac2.css.map": "/static/css/main.59b33ac2.css.map",
+    "main.e2524ee8.js.map": "/static/js/main.e2524ee8.js.map",
+    "684.0bab5c8f.chunk.js.map": "/static/js/684.0bab5c8f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59b33ac2.css",
+    "static/js/main.e2524ee8.js"
+  ]
+}

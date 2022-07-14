@@ -1,0 +1,94 @@
+import React from 'react';
+
+import { styled } from "@mui/material/styles";
+import Box from '@mui/material/Box';
+
+import Container from '../com/Container';
+import Card from '../cards/IPCCard';
+
+import getContext from '../context';
+
+export default function Terminal(props) {
+
+  const terminal = getContext().getTerminal();
+
+  const style = {
+
+    card: {
+      margin: '0px auto',
+      padding: '16px',
+      width: '100%',
+      maxWidth: '800px'
+    },
+
+    content: {
+      display: 'flex',
+      flexDirection: 'column-reverse',
+      overflowY: 'auto',
+      height: '400px',
+      padding: '16px',
+      backgroundColor: '#000000',
+      fontFamily: 'apple2',
+      fontSize: '12px',
+      color: '#888888',
+
+      wordBreak: 'break-all',
+      overflowWrap: 'break-word'
+    }
+  };
+
+  const Input = Box;
+  const InputRef = React.createRef();
+  const AltInputRef = React.createRef();
+
+  const onKeyDown = (event) => {
+    terminal.keyDown(event.key);
+  }
+
+  const onFocus = () => {
+
+    InputRef.current.style.color = "#cccccc"; 
+    terminal.focus();
+  }
+
+  const onBlur = () => {
+
+    if (navigator.virtualKeyboard)
+      navigator.virtualKeyboard.hide();
+
+    InputRef.current.style.color = "#666666"; 
+    terminal.blur();
+  }
+
+  React.useEffect(() => {
+
+    terminal.displayCallback = () => {
+      InputRef.current.innerHTML = terminal.output;
+    };
+
+    terminal.blur();
+
+    InputRef.current.blur();
+    InputRef.current.setAttribute('tabindex', 0);
+
+  });
+
+  return (
+    <Container>
+      <input type="text" ref={ AltInputRef }
+        onKeyDown={ onKeyDown }
+        onChange={ event => event.target.value = "" }
+        onFocus={ onFocus }
+        onBlur={ onBlur }
+      />
+      <Card caption="Terminal" sx={ style.card }>
+        <Input
+          onClick={ () => AltInputRef.current.focus() }
+          onKeyDown={ onKeyDown }
+          ref={ InputRef }
+          sx={ style.content }>
+        </Input>
+      </Card>
+    </Container>
+  );
+}

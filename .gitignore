@@ -1,0 +1,6 @@
+**/config.js
+**/node_modules
+**/build
+
+react/public/sprites
+react/public/cards

@@ -1,0 +1,52 @@
+
+@font-face {
+  font-family: 'alagard';
+  src: url('./fonts/alagard.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'old-sans-black';
+  src: url('./fonts/old-sans-black/OldSansBlack.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'poppins';
+  font-style: italic;
+  src: url('./fonts/Poppins/Poppins-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'poppins';
+  font-weight: bold;
+  src: url('./fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'poppins';
+  font-style: italic;
+  font-weight: bold;
+  src: url('./fonts/Poppins/Poppins-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'poppins-semibold';
+  src: url('./fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'poppins-semibold';
+  font-style: italic;
+  src: url('./fonts/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'apple2';
+  font-style: italic;
+  src: url('./fonts/Apple ][.ttf') format('truetype');
+}
+
