@@ -12,7 +12,7 @@ A web based dApp created for [Playchemy](https://www.playchemy.com) that decodes
 - NodeJS backend accepts RESTful queries of IPCs and Wallets containing IPCs.
 - Responsive UI designed for desktops, tablets and phones!
 
-# [Example](https://myipc.nexusultima.com)
+# [Example](https://myipc.io)
 
 This is a live version of the repo.
 
