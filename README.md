@@ -181,7 +181,7 @@ To query for an individual IPC, type in the following URL but replace `{TOKEN_ID
 the desired IPC you're looking for.
 
 ```
-https://myipc.nexusultima.com/token_id/{TOKEN_ID}
+https://myipc.io/token_id/{TOKEN_ID}
 ```
 
 ### Looking Up a Wallet Address
@@ -189,5 +189,5 @@ https://myipc.nexusultima.com/token_id/{TOKEN_ID}
 You can also scan a wallet to see if it contains any IPCs. To do this type the following url into a browser and replace `{WALLET_ADDRESS}` with the desired wallet address. Then replace `{PAGE}` with 0, and `{TOTAL_PER_PAGE}` with the total number of IPCs you'd like returned (if the wallet contains any). You can also set `{PAGE}` to any number you like with `{TOTAL_PER_PAGE}` as the total number of IPCs displayed per page or list.
 
 ```
-https://myipc.nexuxsultima.com/wallet_address/{WALLET_ADDRESS}/group_index/{PAGE}/group_limit/{TOTAL_PER_PAGE}
+https://myipc.io/wallet_address/{WALLET_ADDRESS}/group_index/{PAGE}/group_limit/{TOTAL_PER_PAGE}
 ```
